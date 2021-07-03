@@ -32,18 +32,17 @@ Elastic Stack 是 ELK Stack 的更新换代产品。
 
 ---
 
-## Philosophy
+## 目的
 
-We aim at providing the simplest possible entry into the Elastic stack for anybody who feels like experimenting with
-this powerful combo of technologies. This project's default configuration is purposely minimal and unopinionated. It
-does not rely on any external dependency or custom automation to get things up and running.
+我们的目标是为任何想尝试这种强大技术组合的人提供最简单的 Elastic 服务入口。这个项目的默认配置是最小化和无个性的。它不依赖于任何外部的依赖或自定义自动化来启动和运行。
 
-Instead, we believe in good documentation so that you can use this repository as a template, tweak it, and make it _your
-own_. [sherifabdlnaby/elastdocker][elastdocker] is one example among others of project that builds upon this idea.
+相反，我们相信良好的文档，以便您可以将此存储库用作模板，对其进行调整，并使其成为您自己的. sherifabdlnaby/elastdocker是建立在这个想法之上的项目中的一个例子。
+
+因此 https://github.com/osins/docker-elk 也是基于这个目的而尝试建立的Git仓库，也许本仓库会有个性化的修改，所以最终建议大家还是参考 https://github.com/deviantony/docker-elk#host-setup ，并以它为基准来搭建基于Docker的elk服务。
 
 ---
 
-## Contents
+## 内容目录
 
 1. [Requirements](#requirements)
    * [Host setup](#host-setup)
@@ -76,16 +75,15 @@ own_. [sherifabdlnaby/elastdocker][elastdocker] is one example among others of p
    * [Plugins and integrations](#plugins-and-integrations)
    * [Swarm mode](#swarm-mode)
 
-## Requirements
+## 环境要求
 
-### Host setup
+### 主机设置
 
 * [Docker Engine](https://docs.docker.com/install/) version **17.05** or newer
 * [Docker Compose](https://docs.docker.com/compose/install/) version **1.20.0** or newer
 * 1.5 GB of RAM
 
-*:information_source: Especially on Linux, make sure your user has the [required permissions][linux-postinstall] to
-interact with the Docker daemon.*
+⚠️Elasticsearch 的引导程序检查被有意禁用，以方便在开发环境中设置 Elastic 服务。对于生产设置，我们建议用户根据 Elasticsearch 文档中的说明设置他们的主机：[系统配置参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/system-config.html)。
 
 By default, the stack exposes the following ports:
 
