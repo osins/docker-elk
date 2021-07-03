@@ -13,26 +13,27 @@ Elastic Stack 是 ELK Stack 的更新换代产品。
 [![Build Status](https://github.com/deviantony/docker-elk/workflows/CI/badge.svg?branch=main)](https://github.com/deviantony/docker-elk/actions?query=workflow%3ACI+branch%3Amain)
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Run the latest version of the [Elastic stack][elk-stack] with Docker and Docker Compose.
+启动最新 [Elastic stack][elk-stack]  的版本， 基于 Dokcer 以及 Docker-compose.
 
-It gives you the ability to analyze any data set by using the searching/aggregation capabilities of Elasticsearch and
-the visualization power of Kibana.
+它使您能够使用 Elasticsearch 的搜索/聚合功能和 Kibana 的可视化功能来分析任何数据集。
 
 *:information_source: The Docker images backing this stack include [X-Pack][xpack] with [paid features][paid-features]
 enabled by default (see [How to disable paid features](#how-to-disable-paid-features) to disable them). **The [trial
 license][trial-license] is valid for 30 days**. After this license expires, you can continue using the free features
 seamlessly, without losing any data.*
 
-Based on the official Docker images from Elastic:
+注意：本模板包括 X-Pack 与 paid features 功能， 默认是开启的（参见如何禁用支付功能禁用它们）。该试用许可证的有效期为30天。此许可证到期后，您可以继续无缝使用免费功能，而不会丢失任何数据。
+
+本elk部署模板基于以下三个镜像:
 
 * [Elasticsearch](https://github.com/elastic/elasticsearch/tree/master/distribution/docker)
 * [Logstash](https://github.com/elastic/logstash/tree/master/docker)
 * [Kibana](https://github.com/elastic/kibana/tree/master/src/dev/build/tasks/os_packages/docker_generator)
 
-Other available stack variants:
+其他可选择的功能及设置:
 
-* [`tls`](https://github.com/deviantony/docker-elk/tree/tls): TLS encryption enabled in Elasticsearch.
-* [`searchguard`](https://github.com/deviantony/docker-elk/tree/searchguard): Search Guard support
+* [`tls`](https://github.com/deviantony/docker-elk/tree/tls): Elasticsearch 开启支持TLS.
+* [`searchguard`](https://github.com/deviantony/docker-elk/tree/searchguard): Guard 搜索支持
 
 ---
 
