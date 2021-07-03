@@ -7,7 +7,7 @@
 
 Elastic Stack 是 ELK Stack 的更新换代产品。
 
-# Elastic stack (ELK) on Docker
+# Elastic stack (ELK) 基于 Docker 的资源
 
 [![Elastic Stack version](https://img.shields.io/badge/Elastic%20Stack-7.13.2-00bfb3?style=flat&logo=elastic-stack)](https://www.elastic.co/blog/category/releases)
 [![Build Status](https://github.com/deviantony/docker-elk/workflows/CI/badge.svg?branch=main)](https://github.com/deviantony/docker-elk/actions?query=workflow%3ACI+branch%3Amain)
@@ -16,11 +16,6 @@ Elastic Stack 是 ELK Stack 的更新换代产品。
 启动最新 [Elastic stack][elk-stack]  的版本， 基于 Dokcer 以及 Docker-compose.
 
 它使您能够使用 Elasticsearch 的搜索/聚合功能和 Kibana 的可视化功能来分析任何数据集。
-
-*:information_source: The Docker images backing this stack include [X-Pack][xpack] with [paid features][paid-features]
-enabled by default (see [How to disable paid features](#how-to-disable-paid-features) to disable them). **The [trial
-license][trial-license] is valid for 30 days**. After this license expires, you can continue using the free features
-seamlessly, without losing any data.*
 
 注意：本模板包括 X-Pack 与 paid features 功能， 默认是开启的（参见如何禁用支付功能禁用它们）。该试用许可证的有效期为30天。此许可证到期后，您可以继续无缝使用免费功能，而不会丢失任何数据。
 
